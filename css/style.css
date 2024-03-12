@@ -125,12 +125,12 @@ h6,
 }
 
 .navbar-light .navbar-brand img {
-    max-height: 60px;
+    max-height: 80px;
     transition: .5s;
 }
 
 .sticky-top.navbar-light .navbar-brand img {
-    max-height: 45px;
+    max-height: 70px;
 }
 
 @media (max-width: 991.98px) {
@@ -213,7 +213,7 @@ h6,
     margin-bottom: 6rem;
     padding: 18rem 0;
     background:
-        url(../img/blob-top-left.png),
+        url(../img/blop-top-left\ \(2\).png),
         url(../img/blob-top-right.png),
         url(../img/blob-bottom-left.png),
         url(../img/blob-bottom-right.png),
