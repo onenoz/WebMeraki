@@ -189,11 +189,12 @@ h6,
         transition: .5s;
     }
 
-    .navbar-light .navbar-nav .nav-item:hover .dropdown-menu {
+    .collapse navbar-collapse-light .navbar-nav .nav-item:hover .dropdown-menu {
         top: 100%;
         visibility: visible;
         transition: .5s;
         opacity: 1;
+        
     }
 
     .navbar-light .btn {
