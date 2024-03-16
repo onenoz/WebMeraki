@@ -401,6 +401,9 @@ h6,
 .service-item:hover a.btn {
     bottom: 0;
 }
+.service-item:hover img {
+    transform: scale(1.1);
+}
 
 
 /*** Project Portfolio ***/
