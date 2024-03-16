@@ -4228,6 +4228,9 @@
     margin-bottom: 1rem;
     list-style: none;
   }
+  .breadcrumb-item {
+    color: #fff ;
+  }
   .breadcrumb-item + .breadcrumb-item {
     padding-left: 0.5rem;
   }
@@ -4240,8 +4243,9 @@
       "/"
     ); /* rtl: var(--bs-breadcrumb-divider, "/") */
   }
-  .breadcrumb-item.active {
-    color: #6c757d;
+  .breadcrumb-item.active,
+  .breadcrumb-item:hover {
+    color: #f6deb3;
   }
   .pagination {
     display: flex;
@@ -6402,6 +6406,7 @@
   }
   .mb-0 {
     margin-bottom: 0 !important;
+    text-align: center;
   }
   .mb-1 {
     margin-bottom: 0.25rem !important;
@@ -6411,6 +6416,7 @@
   }
   .mb-3 {
     margin-bottom: 1rem !important;
+    margin-top: 1rem;
   }
   .mb-4 {
     margin-bottom: 1.3rem !important;

@@ -89,6 +89,16 @@
 
         portfolioIsotope.isotope({filter: $(this).data('filter')});
     });
+
+    //Overlay
+    function showDetails() {
+        document.getElementById('product-details').style.display = 'block';
+    }
+    
+    function hideDetails() {
+        document.getElementById('product-details').style.display = 'none';
+    }
+    
     
 })(jQuery);
 

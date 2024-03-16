@@ -56,8 +56,8 @@
                     <div class="navbar-nav mx-auto py-0">
                         <a href="index.html" class="nav-item nav-link">Home</a>
                         <a href="company.html" class="nav-item nav-link">Company</a>
-                        <a href="merek.html" class="nav-item nav-link">Merek</a>
-                        <a href="contact.html" class="nav-item nav-link active">Contact</a>
+                        <a href="merek.html" class="nav-item nav-link active">Merek</a>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
                     </div>
                     <a href="" class="btn rounded-pill py-2 px-4 ms-3 d-none d-lg-block">Get Started</a>
                 </div>
@@ -70,14 +70,14 @@
                         </div>
                         <div class="col-lg-6 text-center ">
                             <h1 class="text-white mb-4 slideInDown">Wizz Sausage</h1>
-                            <hr class="bg-white mx-auto mt-0" style="width: 90px;">
                             <nav caria-label="breadcrumb">
                                  <ol class="breadcrumb justify-content-center">
-                                    <li class="breadcrumb-item"><a class="text-white" href="merek.html">Merek</a></li>
-                                    <li class="breadcrumb-item text-white active"><a class="text-white" href="deks-merek-wizzsausage.html">Wizz Sausage</li></a>
+                                    <li class="breadcrumb-item text-white"><a class="breadcrumb-item" href="merek.html">Merek</li></a>
+                                    <li class="breadcrumb-item text-white"><a class="breadcrumb-item active" href="deks-merek-wizzsausage.html">Wizz Sausage</li></a>
                                 </ol>
                             </nav>
-                            <p class="text-white pb-3 animated slideInDown">Deksripsi singkat merek</p>
+                            <hr class="bg-white mx-auto mt-0" style="width: 90px;">
+                            <p class="text-white animated slideInDown">Deksripsi singkat merek</p>
                         </div>
 
                     </div>
@@ -86,6 +86,60 @@
         </div>
         <!-- Navbar & Hero End -->
 
+        <!-- Project Start -->
+        <div class="container-xxl py-5">
+            <div class="container py-5 px-lg-5">
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <a class="btn product-item-overlay" onclick="off()" href="">
+                        <div class="product-item d-flex flex-column text-center" id="">
+                            <img class="img-fluid w-100 " src="img/wizz_sausage_original.jpg"> 
+                            <div class="product-item label">
+                                Wizz Sausage - Original 250gr
+                            </div>
+                        </div> 
+                    </div></a>
+                    <div class="col-lg-4 col-md-6">
+                        <a href="" class="product-link" onclick="showDetails()">
+                        <div class="product-item d-flex flex-column text-center" id="">
+                            <img class="img-fluid w-100 " src="img/wizz_sausage_cheese.jpg"> 
+                            <div class="product-item label">
+                                Wizz Sausage - Cheese 250gr
+                            </div>
+                            <div class="overlay">
+                                <div class="text">Click for details</div>
+                            </div>
+                        </div></a>
+                    </div>
+                    <div id="product-details" class="modal">
+                        <div class="modal-content">
+                            <span class="close" onclick="hideDetails()">&times</span>
+                            <h2>Produk Detail</h2>
+                            <p>description of the product goes here</p>
+                            <p>Price: </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 ">
+                        <a href="">
+                        <div class="product-item d-flex flex-column text-center" id="">
+                            <img class="img-fluid w-100 " src="img/wizz_sausage_blackpepper.jpg"> 
+                            <div class="product-item label">
+                                Wizz Sausage - Blackpepper 250gr
+                            </div>
+                        </div></a>
+                    </div>    
+                    <div class="col-lg-4 col-md-6">
+                        <a href="">
+                        <div class="product-item d-flex flex-column text-center" id="">
+                            <img class="img-fluid w-100 " src="img/wizz_sausage_basil.jpg"> 
+                            <div class="product-item label">
+                                Wizz Sausage - Basil 250gr
+                            </div>
+                        </div></a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </div>
     <!-- JavaScript Libraries -->
@@ -101,5 +155,6 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>       
-    </body>
+</body>
+
 </html>

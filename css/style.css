@@ -341,7 +341,7 @@ h6,
 .service-item {
     position: relative;
     padding: 45px 30px;
-    background: var(--light);
+
     overflow: hidden;
     transition: .5s;
 }
@@ -401,9 +401,67 @@ h6,
 .service-item:hover a.btn {
     bottom: 0;
 }
+
+.service-item img{
+    transition: .5s;
+    border-top-left-radius: 5px ;
+    border-top-right-radius: 5px;
+}
+
 .service-item:hover img {
     transform: scale(1.1);
 }
+
+/*** Product ***/
+.product-item {
+    position: relative;
+    padding: 15px 10px;
+
+    overflow: hidden;
+    transition: .5s;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.product-item img {
+    border-radius: 5px 5px 0px 0px;
+}
+
+.label {
+    background: #F6F4F9;
+    color: rgb(0, 0, 0);
+}
+
+.product-item:hover .label{
+
+    background: #F17F2B;
+    color: #ffffff;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.product-item:hover .overlay {
+    opacity: 1;
+}
+
+.overlay .text {
+    color: white;
+    font-size: 20px;
+}
+
+
 
 
 /*** Project Portfolio ***/
@@ -447,6 +505,71 @@ h6,
 .portfolio-item:hover .portfolio-overlay {
     opacity: 0;
 }
+
+.card_page_brand_top {
+    margin: 45px 0px 100px;
+    background: #f7f7f7;
+    position: relative;
+  }
+  .card_page_brand_top .card:first-child {
+    background: #f7f7f7;
+  }
+  .card_page_brand_top .card + .card {
+    border-left: 0px solid rgba(97, 106, 120, 0.07);
+    border-radius: 19px 0px 0px 19px;
+  }
+  .card_page_brand_top .card_content_brand {
+    padding: 30px 50px;
+    background: #ed1b23;
+    color: #fff;
+    border-radius: 19px 0px 0px 19px;
+  }
+  .card_page_brand_top .card_content_brand h3 {
+    color: #fff;
+  }
+  .card_page_brand_top .card_content_brand .kategori {
+    margin: 10px 0 15px;
+  }
+  .card_page_brand_top .card_content_brand .kategori span {
+    background: #c7171e;
+    padding: 5px 30px;
+    border-radius: 15px;
+    color: #fff;
+  }
+  .card_page_brand_top .card_content_brand .content p {
+    color: #fff;
+  }
+  .card_produk {
+    background: #f7f7f7;
+    position: relative;
+  }
+  .card_produk .card-footer {
+    border-radius: 10px 10px 0px 0px;
+    background: #e0e0e0;
+    text-align: center;
+    text-transform: capitalize;
+    color: #5a5a5a;
+  }
+  .card_produk .card-footer a {
+    color: #5a5a5a;
+  }
+  .card_produk:hover {
+    cursor: pointer;
+  }
+  .card_produk:hover .card-footer {
+    background: #ed1b23;
+    color: #fff;
+    font-weight: bold;
+  }
+  .card_produk:hover .card-footer a {
+    color: #fff;
+  }
+  .card_produk .luar_negri {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 0;
+    right: 0;
 
 
 /*** Newsletter ***/
