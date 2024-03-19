@@ -101,7 +101,7 @@
 
     //Nampilin deksripsi produk
     $(document).ready(function() {
-        $('.product-item').click(function() {
+        $('.button').click(function() {
             var id = $(this).attr('id');
             var detail = $('#' + id + '.detail');
 

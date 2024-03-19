@@ -450,9 +450,42 @@ h6,
     background: #C7171E;
     padding: 5px 30px;
     border-radius: 15px;
-    color: #fff
-    
+    color: #fff;
+    width: 200px;
+    height: auto;
 }
+.card {
+    width: 75%;
+    background-color: #5a5a5a;
+
+}
+
+/*** Deksripsi Produk***/
+
+    .product-description {
+        display: flex;
+        align-items: center;
+        flex: 1;
+    }
+    
+    .product-image {
+        flex: 1;
+        text-align: center;
+    }
+    
+    .product-image img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .description {
+        flex: 1;
+        background-color: #F17F2B; /* Warna latar belakang deskripsi */
+        padding: 20px;
+        border-radius: 5px;
+        align-items: center;
+    }
+    
 
 
 
