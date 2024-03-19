@@ -98,7 +98,21 @@
     function hideDetails() {
         document.getElementById('product-details').style.display = 'none';
     }
-    
+
+    //Nampilin deksripsi produk
+    $(document).ready(function() {
+        $('.product-item').click(function() {
+            var id = $(this).attr('id');
+            var detail = $('#' + id + '.detail');
+
+            if (detail.is(':visible')) {
+                detail.hide();
+            } else {
+                $('.detail').hide();
+                detail.show();
+            }
+        });
+    });
     
 })(jQuery);
 

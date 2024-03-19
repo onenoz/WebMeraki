@@ -422,6 +422,9 @@ h6,
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
+.product-item:hover {
+    cursor: pointer;
+}
 
 .product-item img {
     border-radius: 5px 5px 0px 0px;
@@ -433,34 +436,23 @@ h6,
 }
 
 .product-item:hover .label{
-
     background: #F17F2B;
     color: #ffffff;
 }
 
-.overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: opacity 0.5s;
+.detail {
+    background-color: seashell;
+    width: 100%;
+    height: auto;
+    display: none;
 }
-
-.product-item:hover .overlay {
-    opacity: 1;
+.dekspro {
+    background: #C7171E;
+    padding: 5px 30px;
+    border-radius: 15px;
+    color: #fff
+    
 }
-
-.overlay .text {
-    color: white;
-    font-size: 20px;
-}
-
 
 
 
