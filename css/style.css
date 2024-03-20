@@ -434,6 +434,9 @@ h6,
     background: #F6F4F9;
     color: rgb(0, 0, 0);
 }
+.label :active {
+    background-color: #F17F2B;
+}
 
 .product-item:hover .label{
     background: #F17F2B;
@@ -456,6 +459,7 @@ h6,
     background-color: #5a5a5a;
 
 }
+
 
 /*** Deksripsi Produk***/
 
@@ -527,72 +531,6 @@ h6,
 .portfolio-item:hover .portfolio-overlay {
     opacity: 0;
 }
-
-.card_page_brand_top {
-    margin: 45px 0px 100px;
-    background: #f7f7f7;
-    position: relative;
-  }
-  .card_page_brand_top .card:first-child {
-    background: #f7f7f7;
-  }
-  .card_page_brand_top .card + .card {
-    border-left: 0px solid rgba(97, 106, 120, 0.07);
-    border-radius: 19px 0px 0px 19px;
-  }
-  .card_page_brand_top .card_content_brand {
-    padding: 30px 50px;
-    background: #ed1b23;
-    color: #fff;
-    border-radius: 19px 0px 0px 19px;
-  }
-  .card_page_brand_top .card_content_brand h3 {
-    color: #fff;
-  }
-  .card_page_brand_top .card_content_brand .kategori {
-    margin: 10px 0 15px;
-  }
-  .card_page_brand_top .card_content_brand .kategori span {
-    background: #c7171e;
-    padding: 5px 30px;
-    border-radius: 15px;
-    color: #fff;
-  }
-  .card_page_brand_top .card_content_brand .content p {
-    color: #fff;
-  }
-  .card_produk {
-    background: #f7f7f7;
-    position: relative;
-  }
-  .card_produk .card-footer {
-    border-radius: 10px 10px 0px 0px;
-    background: #e0e0e0;
-    text-align: center;
-    text-transform: capitalize;
-    color: #5a5a5a;
-  }
-  .card_produk .card-footer a {
-    color: #5a5a5a;
-  }
-  .card_produk:hover {
-    cursor: pointer;
-  }
-  .card_produk:hover .card-footer {
-    background: #ed1b23;
-    color: #fff;
-    font-weight: bold;
-  }
-  .card_produk:hover .card-footer a {
-    color: #fff;
-  }
-  .card_produk .luar_negri {
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    top: 0;
-    right: 0;
-  }
 
 /*** Newsletter ***/
 .newsletter {

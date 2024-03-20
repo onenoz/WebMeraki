@@ -114,6 +114,8 @@
                  $('html, body').animate({
                     scrollTop: detail.offset().top - 100 // Adjust the value as needed
                 }, 200); // Adjust the duration as needed
+                 // Saat detail ditampilkan, tambahkan kelas .active dan hapus .inactive pada tombol yang dipilih
+                 $(this).addClass('.label :active ');
             }
         });
     });
