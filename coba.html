@@ -85,7 +85,63 @@
         <!-- Navbar & Hero End -->
 
         <!-- Project Start -->
+        <div class="container-xl">
+            <div id="card_page_brand_top" class="row card-group card_page_brand_top" v-if="show_detail">
+                <div class="card col-md-4">
+                    <div class="card-body">
+                        <img :src="images_detail.image_detail" class="img-fluid">
+                    </div>
+                </div>
+                <div class="card col-md-8 card_content_brand">
+                    <h3 class="text-white text-capitalize">{{ name_detail.name }}</h3>
+                    <!--<div class="kategori text-capitalize"><span >{{ kategori.kategori }}</span></div>-->
+                    <div class="content" v-html="detail.detail">{{ detail.detail }}
+                    </div>
+                    <div class="shipping mt-3">
+                        <a href="#" class="text-white" data-toggle="modal" data-target="#shipping">Packaging Specification ></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
         <div class="container align-items-center content">
+            <div id="card_page_brand_top" class="row card-group card_page_brand_top" v-if="show_detail">
+                <div class="card col-md-4 detail" id="01">
+                    <div class="card-body product-description">
+                        <div class="product-image align-items-center">
+                            <img class="img-fluid w-50" src="img/wizz_sausage_original.jpg" alt="Product Image">
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-md-8 card_content_brand detail" id="01">
+                    <h3 class="text-white text-capitalize">Product Title</h3>
+                    <div class="description">
+                        <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis libero ut ultricies dignissim. Donec eu feugiat mauris. Sed vel risus in ligula convallis tristique.</p>
+                        <p class="text-white">Price: $XX.XX</p>
+                    </div>
+                </div>
+
+            <div id="card_page_brand_top" class="row card-group card_page_brand_top" v-if="show_detail">
+                <div class="card col-md-4 ">
+                    <div class="card-body">
+                        <img :src="images_detail.image_detail" class="img-fluid">
+                    </div>
+                </div>
+                <div class="card col-md-8 card_content_brand">
+                    <h3 class="text-white text-capitalize">{{ name_detail.name }}</h3>
+                    <!--                    <div class="kategori text-capitalize">
+            <span >{{ kategori.kategori }}</span>
+        </div>-->
+                    <div class="content" v-html="detail.detail">{{ detail.detail }}
+    </div>
+                    <div class="shipping mt-3">
+                        <a href="#" class="text-white " data-toggle="modal" data-target="#shipping">Packaging Specification >
+        </a>
+                    </div>
+                </div>
+            </div>
+            
+            
             <div class="product-description detail" id="01">
                 <div class="product-image col-lg-6 align-items-center">
                     <img class="img-fluid w-50" src="img/wizz_sausage_original.jpg" alt="Product Image">

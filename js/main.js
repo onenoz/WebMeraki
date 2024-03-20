@@ -100,25 +100,29 @@
     }
 
     //Nampilin deksripsi produk
-    $(document).ready(function() {
-        $('.button').click(function() {
-            var id = $(this).attr('id');
-            var detail = $('#' + id + '.detail');
+ $(document).ready(function() {
+    $('.button').click(function() {
+        // Menghapus kelas 'active' dari semua tombol
+        $('.button').removeClass('active');
 
-            if (detail.is(':visible')) {
-                detail.hide();
-            } else {
-                $('.detail').hide();
-                detail.show();
-                 // Scroll to the detail
-                 $('html, body').animate({
-                    scrollTop: detail.offset().top - 100 // Adjust the value as needed
-                }, 200); // Adjust the duration as needed
-                 // Saat detail ditampilkan, tambahkan kelas .active dan hapus .inactive pada tombol yang dipilih
-                 $(this).addClass('.label :active ');
-            }
-        });
+        var id = $(this).attr('id');
+        var detail = $('#' + id + '.detail');
+
+        if (detail.is(':visible')) {
+            detail.hide();
+        } else {
+            $('.detail').hide();
+            detail.show();
+            // Scroll to the detail
+            $('html, body').animate({
+                scrollTop: detail.offset().top - 100 // Adjust the value as needed
+            }, 50); // Adjust the duration as needed
+            // Saat detail ditampilkan, tambahkan kelas .active dan hapus .inactive pada tombol yang dipilih
+            $(this).addClass('active'); // Menambahkan kelas 'active' ke tombol yang diklik
+            // Scroll ke detail
+        }
     });
+});
     
 })(jQuery);
 
