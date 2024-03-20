@@ -110,6 +110,10 @@
             } else {
                 $('.detail').hide();
                 detail.show();
+                 // Scroll to the detail
+                 $('html, body').animate({
+                    scrollTop: detail.offset().top - 100 // Adjust the value as needed
+                }, 200); // Adjust the duration as needed
             }
         });
     });

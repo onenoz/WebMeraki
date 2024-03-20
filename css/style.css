@@ -441,9 +441,6 @@ h6,
 }
 
 .detail {
-    background-color: seashell;
-    width: 100%;
-    height: auto;
     display: none;
 }
 .dekspro {
@@ -595,7 +592,7 @@ h6,
     height: 100px;
     top: 0;
     right: 0;
-
+  }
 
 /*** Newsletter ***/
 .newsletter {
