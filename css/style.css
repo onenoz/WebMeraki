@@ -436,6 +436,8 @@ h6,
 }
 .active .label {
     background-color: #F17F2B; /* Warna tombol saat aktif */
+    color: #ffffff;
+   
 }
 .product-item:hover .label{
     background: #F17F2B;
@@ -451,53 +453,57 @@ h6,
 /*** Deksripsi Produk***/
 
 .base-dekripsi{
-    margin: 45px 0px 100px;
+    display: flex; /* Menggunakan flexbox */
+    justify-content: space-between; /* Menyusun elemen dalam satu baris dan memberikan ruang di antara elemen */
+    align-items: center; /* Menengahkan secara vertikal */
+    margin: 45px 0px 40px;
     background: #F7F7F7;
     position: relative;
-    display: flex;
-    align-items: center;
+    border-radius: 5px;
+
 }
 .base{
     position: relative;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    min-width: 0;
+    vertical-align: top; /* Ini akan memastikan elemen tetap berada di atas satu sama lain */
+    width: 50%; /* Anda mungkin perlu menyesuaikan lebarnya sesuai kebutuhan */
     word-wrap: break-word;
-    background-color: #fff;
+    background-color: #F7F7F7;
     background-clip: border-box;
-    border-radius: .25rem;
+    padding-left: 20px;
 }
 .base-dekripsi .base+.base {
     border-left: 0px solid rgba(97,106,120,0.07);
-    border-radius: 19px 0px 0px 19px;
+
 }
 .base-dekripsi .dekripsi-konten {
-    padding: 30px 50px;
-    background: #ED1B23;
+    padding: 50px 50px;
+    background: #F17F2B;
     color: #FFF;
-    border-radius: 19px 0px 0px 19px;
     flex-grow: 1;
+    margin-right: 20px;
+    border-radius: 0px 5px 5px 0px;
+    display: inline-block; /* Atau inline */
+    vertical-align: top; /* Sama seperti di atas */
+    width: 50%;
+    text-align: center;
 }
 .base-dekripsi .base{
     width: 50%;
 }
-.base-dekripsi .dekripsi-konten {
-    padding: 30px 50px;
-    background: #ED1B23;
-    color: #FFF;
-    border-radius: 0px 19px 19px 0px;
-}
 .base-body {
-    -ms-flex: 1 1 auto;
-    flex: 1 1 auto;
-    padding: 1.25rem;
+    /* -ms-flex: 1 1 auto;
+    flex: 1 1 auto; */
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
-.card-body img {
-    width: 50%; /* Mengatur ukuran gambar menjadi 50% dari ukuran parent-nya */
+.base-body img {
     display: block; /* Menjadikan gambar menjadi blok agar dapat diatur margin */
-    margin-right: 20px; /* Memberikan jarak antara gambar dan konten teks */
+     /* Memberikan jarak antara gambar dan konten teks */
+    border-radius: 5px;
+}
+.detail {
+    display: none;
 }
 
 

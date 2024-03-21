@@ -100,29 +100,30 @@
     }
 
     //Nampilin deksripsi produk
- $(document).ready(function() {
-    $('.button').click(function() {
-        // Menghapus kelas 'active' dari semua tombol
-        $('.button').removeClass('active');
-
-        var id = $(this).attr('id');
-        var detail = $('#' + id + '.detail');
-
-        if (detail.is(':visible')) {
-            detail.hide();
-        } else {
-            $('.detail').hide();
-            detail.show();
-            // Scroll to the detail
-            $('html, body').animate({
-                scrollTop: detail.offset().top - 100 // Adjust the value as needed
-            }, 50); // Adjust the duration as needed
-            // Saat detail ditampilkan, tambahkan kelas .active dan hapus .inactive pada tombol yang dipilih
-            $(this).addClass('active'); // Menambahkan kelas 'active' ke tombol yang diklik
-            // Scroll ke detail
-        }
+    $(document).ready(function() {
+        $('.button').click(function() {
+            // Menghapus kelas 'active' dari semua tombol
+            $('.button').removeClass('active');
+    
+            var id = $(this).attr('id');
+            var detail = $('#' + id + '.base-dekripsi');
+    
+            if (detail.is(':visible')) {
+                detail.hide();
+            } else {
+                 // Menyembunyikan semua base-dekripsi yang tidak memiliki id yang sama dengan id tombol yang diklik
+                $('.base-dekripsi').not(detail).hide();
+                detail.show().css('display', 'flex');
+                // $('.base-dekripsi').css('display', 'flex'); // Menetapkan display: flex; saat detail ditampilkan
+                // Scroll to the detail
+                $('html, body').animate({
+                    scrollTop: detail.offset().top - 100 // Sesuaikan nilai jika diperlukan
+                }, 50); // Sesuaikan durasi animasi jika diperlukan
+                // Saat detail ditampilkan, tambahkan kelas .active dan hapus .inactive pada tombol yang dipilih
+                $(this).addClass('active'); // Menambahkan kelas 'active' ke tombol yang diklik
+            }
+        });
     });
-});
     
 })(jQuery);
 
