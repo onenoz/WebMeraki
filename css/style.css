@@ -627,7 +627,6 @@ h6,
 }
 
 .footer .btn.btn-social {
-    margin-right: 5px;
     width: 40px;
     height: 40px;
     display: flex;
@@ -692,4 +691,8 @@ h6,
 .footer .copyright a:hover,
 .footer .footer-menu a:hover {
     color: var(--secondary);
+}
+
+.rounded-circle {
+    border-radius: 50%; /* Mengatur radius border menjadi 50% untuk membuat bentuk bulat */
 }
